@@ -1,5 +1,5 @@
 body { 
-	font: 14px/16px Arial, san-serif;
+	font: 14px/16px "Trebuchet MS", Arial, san-serif;
 	color: #fff;						 
 	margin: 0;
 }
@@ -10,21 +10,26 @@ a {
 }
 
 nav ul { 
-	background-color: #98c7d4; 
+	background-color: #D6AD99; 
 	margin: 0;
 	padding: 10px;
 }
 nav li { 
 	display: inline;
 	margin: 0 5px 0 5px;
+	font-size: 12px;
+}
+nav li a {
+	transition: color 0.5s ease-in-out;
 }
 
 nav li a:hover {
-	color: #ff3300;
+	color: #B82E00;	
 }
 
 .main { 
-	background-color: #000;
+	/*background-color: #B82E00;*/
+	background: linear-gradient(to bottom, #932500, #B82E00, #D6AD99);
 	width: 100%;
 	height: 200px;
 }
@@ -33,25 +38,47 @@ nav li a:hover {
 	width: 400px;
 	height: 100%;
 	margin: 0 auto;
-	text-align: center		
-}			
+	text-align: center;		
+}
+
+.main article p:first-letter {
+		font-size: xx-large;
+		/*text-shadow: #000 1px 1px;*/
+}
+			
 .button { 
-	background-color: #ff3300;
+	background: #B2B2CC;	
+	border-radius: 5px 15px 5px 15px;
+	box-shadow: 1px 1px #6B6B7A;	
 	display: block;
 	width: 120px;
 	margin: 0 auto;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 10px; transform: scale(2);
 	padding: 5px 0 5px 0;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-		
+/*
+@font-face {
+    font-family: "Raleway";
+    font-weight: normal;
+    font-style: normal;
+    src: url("file:///C:/Manok/Projects/test/style/raleway_thin-webfont.ttf");
+}
+*/
+@font-face {
+	font-family: "junction regular";
+	src: url("file:///C:/Manok/Projects/test/style/Junction-webfont.ttf");
+	font-weight: normal;
+	font-style: normal;	
+}
+
 .highlight { 
-	background-color: #ef6600; 
+	background-color: #5C85FF; 
 }
 .blurb { 
-	display: none;
+	display: none;	
 }
 
 .group:before,
